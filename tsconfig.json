@@ -1,32 +1,20 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",  // Your source files are here
-    "emitDeclarationOnly": false,  // Generate both .js and .d.ts files
-    "target": "ES2020",
-    "types": ["node"],
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "declaration": true,
-    "outDir": "./dist",  // or your preferred output directory
-    "declarationDir": "./dist/types",  // optional, for separate .d.ts files location
-    /* Bundler mode */
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    "jsx": "preserve",
+    "incremental": true,
+    "declaration": false  // This is the key change
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules"]
 }
