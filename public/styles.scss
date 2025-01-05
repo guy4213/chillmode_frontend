@@ -1,0 +1,217 @@
+* {
+
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+   body {
+       padding: 0 ;
+    background-color: #004f8c;
+    // background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+    background-image: linear-gradient(135deg, rgba(234, 234, 234,0.06) 0%, rgba(234, 234, 234,0.06) 50%
+    ,rgba(169, 169, 169,0.06) 50%, rgba(169, 169, 169,0.06) 100%),linear-gradient(90deg, rgb(20,20,20)
+    ,rgb(20,20,20)); background-size: 72px 72px;
+overflow-x: hidden;
+  } 
+  
+  header {
+  
+    margin: auto ;
+    padding: 16px 32px;
+    
+  }
+  
+  header h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 56px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: center;
+  }
+  
+.MainPage{
+  text-align: center;
+  padding: 4%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%; /* Adjust the max-width as needed */
+  margin: auto;
+}
+
+.signUp h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color:goldenrod ;
+  font-weight: bold;
+}
+.signIn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%; /* Adjust the max-width as needed */
+  margin: auto;
+}
+.signIn h2  {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color:darkcyan ;
+  font-weight: bold;
+}
+.signIn h1  {
+  margin-top:100px;
+  font-size: 24px;
+  color:darkcyan ;
+  font-weight: bold;
+}
+.signIn .signInButton {
+  margin: 10px;
+  padding: 10px;
+  background-color: #088bb7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.signIn .signInButton:hover  {
+  
+  background-color: #0b0d0b;
+}
+
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+
+.formItem input {
+ 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signUp .signUpButton {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signUp .signUpButton:hover {
+  background-color: #0b0d0b;
+}
+
+footer {
+    display: flex;
+   justify-content: center;
+   position: absolute;
+   margin-bottom: 6%;
+   top:93%;  
+   width: 98%;
+     
+  }
+ 
+  
+  footer p {
+    color: #ccc;
+  }
+ 
+ 
+  .seriesList{
+    width: 100%; /* Adjust this width according to your layout */
+    overflow-x:  hidden; 
+    direction: rtl; /* Change the direction to right-to-left */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; /* Change justify-content according to your preference */
+    padding-bottom: 3rem;
+    
+     scroll-behavior: smooth; /* Smooth scrolling behavior */
+  transition: transform 0.7s ease; /* Smooth transition for sliding */
+    }
+ 
+
+
+  
+  .series { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: #000000;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #000000;
+    padding: 0px;
+    width: 15.5rem;
+    transition: transform 300ms ease 100ms;
+    margin-left: 16px;
+    
+  }
+  .seriesList:hover .series {
+    transform: translateX(-25%);
+  
+ }
+ 
+ .series:hover  ~ .series{
+  transform: translateX(25%);
+  }
+
+ 
+  
+.series h2 {
+  color: white;
+  text-align: center;
+}
+  .series img {
+    padding: 0;
+    margin: 0%;
+    width:17.5rem;
+    height: 11rem;
+    display: block; /* Ensures that the margin auto works properly */
+  }
+  
+
+  .star {
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star.gold {
+    color: gold;
+  }
+  
+  /* Half star */
+  .half-star {
+    position: relative;
+  }
+  
+  .half-star::before {
+    content: '\u2605'; /* Full Star Unicode */
+    position: absolute;
+    left: 0;
+    color: gold;
+    width: 50%;
+    overflow: hidden;
+  }

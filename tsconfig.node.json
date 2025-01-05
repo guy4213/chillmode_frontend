@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "include": [
+    "src/**/*.ts", // Include all TypeScript files under the src directory
+    "vite.config.ts" // Keep including your Vite configuration
+  ]
+}
