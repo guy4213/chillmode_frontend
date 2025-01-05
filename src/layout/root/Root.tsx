@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from '../../components/Header'
-import '../../../../Series_app/public/styles.scss'
+import Header from '../../components/Header';
+import '../../styles/styles.scss'
 import Footer from "../../components/Footer";
 import { useAppState } from "../../AppState";
 import { NavBar } from "../../components/NavBar/NavBar";
