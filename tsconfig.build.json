@@ -4,6 +4,6 @@
       "noEmit": false,
       "declaration": true,
       "emitDeclarationOnly": true,
-      "outDir": "./dist"
+      "outDir": "./build"  // Changed to build
     }
   }

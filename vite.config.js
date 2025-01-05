@@ -8,4 +8,7 @@ export default defineConfig({
   css: {
     modules: true, // Enable CSS modules
   },
+  build: {
+    outDir: 'dist',
+  }
 });
