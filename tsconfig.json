@@ -6,7 +6,9 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
- 
+    "declaration": true,
+    "outDir": "./dist",  // or your preferred output directory
+    "declarationDir": "./dist/types",  // optional, for separate .d.ts files location
     /* Bundler mode */
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -23,6 +25,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "**/*.d.ts"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
