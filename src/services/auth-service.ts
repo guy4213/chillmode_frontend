@@ -1,7 +1,7 @@
 
 import React from "react";
 
-export const baseUrl = `http://localhost:8084/api/v1`;
+export const baseUrl = `http://chillmode-backend.onrender.com/api/v1`;
 
 async function register(body: any) {
   const res = await fetch(`${baseUrl}/auth/register`, {
