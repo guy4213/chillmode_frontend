@@ -9,7 +9,7 @@ import { Category, SeriesItem, SeriesItemDetails } from "../@types/types";
 
 const getAllSeries=async()=>{
 
-  const res= await  request({url:`/series?pageNo=0&pageSize=40&sortDir=asc&sortBy=seriesName`});
+  const res= await axios.get(`${baseUrl}/series?pageNo=0&pageSize=40&sortDir=asc&sortBy=seriesName`);
   
   console.log(res.data)
   return res.data;
@@ -19,7 +19,7 @@ const getAllSeries=async()=>{
   
 const getSeriesByIdAxios=async(p:number)=>{
 
-const res= await  request({url:`/series/${p}`});
+const res= await  axios.get(`${baseUrl}/series/${p}`);
 
 console.log(res.data)
 return res.data;
@@ -28,7 +28,7 @@ return res.data;
 
 const getUserIdByUserName = async (userName:string) => {
   try {
-    const res = await request({ url: `/users/getUserByUserName/${userName}` });
+    const res = await axios.get(`${baseUrl}/users/getUserByUserName/${userName}` );
     console.log(res.data.id);
     return res.data.id; // Assuming res.data contains the user data
   } catch (error) {
