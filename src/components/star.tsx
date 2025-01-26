@@ -11,7 +11,7 @@ const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, 
   };
 
   const submitRate = async () => {
-    // Fetch data to update average rate and refresh the page
+    
     fetchData();
   };
 
