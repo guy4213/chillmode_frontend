@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import React from 'react';
 
-const StarRating: React.FC<{ id:number, initialRating: number , button:boolean,  fetchData?: () => void; }>
- = ({ id, button, initialRating, fetchData }) => {
+const StarRating: React.FC<{ id:number, initialRating: number , button:boolean,  updateRate?: () => void; }>
+ = ({ id, button, initialRating, updateRate }) => {
   const [rating, setRating] = useState(initialRating);
 
   const handleStarClick = (newRating: number) => {
@@ -12,8 +12,8 @@ const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, 
 
   const submitRate = async (event: React.FormEvent) => {
     event.preventDefault(); // Preven
-    if (fetchData !== undefined) {
-      fetchData(); 
+    if (updateRate !== undefined) {
+      updateRate(); 
     }
   };
 
