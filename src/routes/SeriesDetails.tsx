@@ -42,7 +42,7 @@ const SeriesDetails = () => {
 
   useEffect(() => {
     fetchData();
-  }, [seriesProps]);
+  }, []);
   
   if (!seriesProps && !seriesDetails) {
     return <div></div>;

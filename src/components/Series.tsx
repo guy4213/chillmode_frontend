@@ -25,8 +25,6 @@ function Series(props:any) {
     };
 
 function goToDetails(){
-    console.log(props.img)
- 
     const seriesProps:any= {
        
         id:props.id,
