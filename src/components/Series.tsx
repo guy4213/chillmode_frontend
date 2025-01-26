@@ -62,7 +62,7 @@ function goToDetails(){
                 id={props.id }
                initialRating={props.averageRate}
             fetchData={()=>{}}
-            button={true}
+            button={false}
 
                 />
          </div>
