@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 
-const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, fetchData: () => void; }>
+const StarRating: React.FC<{ id:number, initialRating: number , button:boolean,  fetchData?: () => void; }>
  = ({ id, button, initialRating, fetchData }) => {
   const [rating, setRating] = useState(initialRating);
 
@@ -10,9 +10,11 @@ const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, 
     localStorage.setItem("rating", newRating.toString());
   };
 
-  const submitRate = async () => {
-    
-    fetchData();
+  const submitRate = async (event: React.FormEvent) => {
+    event.preventDefault(); // Preven
+    if (fetchData !== undefined) {
+      fetchData(); 
+    }
   };
 
   return (
@@ -51,7 +53,7 @@ const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, 
           )
         );
       })}
-      <form onSubmit={submitRate}>
+      <form onSubmit={(event: React.FormEvent)=>submitRate(event)}>
     {  button 
         ?(
          <p className=' mb-0'>rating: {rating} / 10</p>

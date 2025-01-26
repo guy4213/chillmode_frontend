@@ -59,10 +59,9 @@ function goToDetails(){
                     <div className="text-center text-white">
                         <StarRating 
                key={props.id}
-                id={props.id }
+                id={props.id}
                initialRating={props.averageRate}
-            fetchData={()=>{}}
-            button={false}
+               button={false}
 
                 />
          </div>
