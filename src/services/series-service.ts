@@ -5,7 +5,7 @@ import { Category, SeriesItem, SeriesItemDetails } from "../@types/types";
 
 
 
-// base url=http://chillmode-backend.onrender.com/api/v1
+// base url=https://chillmode-backend.onrender.com/api/v1
 
 const getAllSeries=async()=>{
 
