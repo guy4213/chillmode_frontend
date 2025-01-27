@@ -59,7 +59,7 @@ const StarRating: React.FC<{ id:number, initialRating: number , button:boolean, 
          <p className=' mb-0'>rating: {rating} / 10</p>
          )
         :(
-          <p className=' mb-0'>average rate: {rating} / 10</p>
+          <p className=' mb-0'>average rate: {rating.toFixed(2)} / 10</p>
          )}
         <br />
         {button && (

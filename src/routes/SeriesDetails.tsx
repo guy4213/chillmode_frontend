@@ -55,7 +55,7 @@ const SeriesDetails = () => {
   if (!seriesProps && !seriesDetails) {
     return <div></div>;
   }
-  let currentSeriesDetails:any
+  let currentSeriesDetails:any;
 if (seriesProps==seriesDetails){
   currentSeriesDetails = seriesProps;
 }
@@ -63,10 +63,7 @@ else{
   currentSeriesDetails=seriesDetails;
 }
 
-  useEffect(() => {
-    updateRate();
-    
-  }, [seriesDetails]);
+
 
   const [prevRating, setPrevRating] = useState<number | null>(null);
   const [ratingChanged, setRatingChanged] = useState(false);
